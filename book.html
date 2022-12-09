@@ -18,6 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
+    
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,18 +53,21 @@
     <section class="container mt-5 mb-5">
         <div class="row">
             <div class="col-xl-7 col-lg-7 col-md-12 col-12">
-                <h3>Stad Name</h3>
-                <img src="img/istockphoto-1130905980-612x612.jpg" alt="">
+                
+                <h4>Seat Numbers</h4>
+                <div class="row">
+                <div id="seats" class="col-7">
+
+                </div>
+                </div>
             </div>
             <div class="col-xl-5 col-lg-5 col-md-12 col-12 mt-5">
+              <h3>Stad Name</h3>
                 <form action="">
                     <form>
+                      
                         <div class="form-group">
                           <label for="exampleInputEmail1">Credit Card</label>
-                          <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Number of Seats</label>
                           <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
@@ -166,7 +170,7 @@
   
             <!--Grid column-->
             <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Links</h5>
+              <h5 class=" text-uppercase">Links</h5>
   
               <ul class="list-unstyled mb-0">
                 <li>
@@ -284,5 +288,27 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+  <script>
+    function getNextChar(char) {
+  return String.fromCharCode(char.charCodeAt(0) + 1);
+  }
+    let seatNumber=1
+    let row ='A'
+    for(let i=0;i<5;i++){
+      
+     for(let j=0;j<4;j++){
+      let x = document.getElementById('seats').innerHTML += `
+      <button class='btn seso btn-primary mb-2' id='${i}${j}'>${row}${j}</button>
+        `  
+        seatNumber++
+     }
+     let y = document.getElementById('seats').innerHTML += '<hr style="background:#fff;width:0px;margin:0px;">'
+    row =getNextChar(row);
+    }
 
+    // if(mysqli_num_rows<1){
+//   <button>$_POST['column']</button>
+// }
+  </script>
+  
 </html>

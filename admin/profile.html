@@ -133,13 +133,30 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <form>
-                        <select class="custom-select" name="" id="">
-                            <option value="pending">pending</option>
-                            <option value="approved">approved</option>
-                            <option value="rejected">rejected</option>
-                        </select>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">First Name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Last Name</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
                         
-                        <button type="submit" class="mt-2 btn btn-primary">Submit</button>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Nationality</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Password</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Birth Date</label>
+                          <input type="datetime-local" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                       
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                    
                 </div>
@@ -147,7 +164,6 @@
 
             </div>
             <!-- End of Main Content -->
-
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -209,3 +225,8 @@
 </body>
 
 </html>
+
+<!--
+    if type is manager the users table will be deleted 
+    if type is site administrator table of users will be shown
+  -->

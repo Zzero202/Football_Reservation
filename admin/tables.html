@@ -113,7 +113,7 @@
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                             aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="profile.html">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Profile
                             </a>
@@ -138,7 +138,10 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
+                            <div class="row">
                             <h6 class="m-0 font-weight-bold text-primary">DataTables of stadiums</h6>
+                            <a href="stad.html" class="ml-auto btn btn-primary">Add stadium</a>
+                        </div> 
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -146,18 +149,18 @@
                                     <thead>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Details</th>
+                                            <th>Shape</th>
                                             <th>Location</th>
-                                            <th>Built In</th>
+                                            <th>Number of seats</th>
                                            
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Name</th>
-                                            <th>Details</th>
+                                            <th>Shape</th>
                                             <th>Location</th>
-                                            <th>Built In</th>
+                                            <th>Number of seats</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -213,7 +216,10 @@
                     </div>
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
+                            <div class="row">
                             <h6 class="m-0 font-weight-bold text-primary">DataTables of matches</h6>
+                            <a href="match.html" class="ml-auto btn btn-primary">Create Match</a>
+                        </div>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -251,6 +257,7 @@
                                             <td><a class="btn btn-warning" href="edit-match.html">
                                             Edit   
                                             </a></td>
+                                            
                                         </tr>   
                                     </tbody>
                                 </table>
@@ -275,6 +282,7 @@
                                             <th>Email Address</th>
                                             <th>Role</th>
                                             <th>Action</th>
+                                            <th>Deletion</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -288,6 +296,7 @@
                                             <th>Email Address</th>
                                             <th>Role</th>
                                             <th>Action</th>
+                                            <th>Deletion</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -301,6 +310,9 @@
                                             <td>$320,800</td>
                                             <td>$320,800</td>
                                             <td><a id="app-pend" class="btn btn-warning" href="edit-status.html">pending</a></td>
+                                            <td><a class="btn btn-danger" onclick="confirm('are u sure u want delete this user')">
+                                                Delete   
+                                                </a></td>
                                         </tr>   
                                     </tbody>
                                 </table>
@@ -349,7 +361,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="../login.html">Logout</a>
                 </div>
             </div>
         </div>
